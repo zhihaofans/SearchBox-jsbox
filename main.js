@@ -1,1 +1,2 @@
-$ui.render("main");
+
+ $ui.render("scripts/main");

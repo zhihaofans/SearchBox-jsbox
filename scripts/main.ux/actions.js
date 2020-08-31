@@ -1,4 +1,4 @@
-const app = require("./scripts/app");
+const app = require("./app");
 
 exports.tapped = sender => {
   app.sayHello();
