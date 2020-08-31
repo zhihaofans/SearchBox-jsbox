@@ -1,6 +1,12 @@
-var text = $context.text;
-var link = $context.link;
-var image = $context.image;
+let router = {
+    text: require("/scripts/text")
+};
+let text = $context.text,
+    link = $context.link,
+    image = $context.image,
+    clipText = $clipboard.text,
+    clipUrl = $clipboard.link,
+    clipImage = $clipboard.image;
 if (text) {
     $ui.alert({
         title: "text",
@@ -9,7 +15,23 @@ if (text) {
             {
                 title: "OK",
                 disabled: false, // Optional
-                handler: function() {}
+                handler: function() {
+                    router.text.baiduText(text);
+                }
+            }
+        ]
+    });
+} else if (clipText) {
+    $ui.alert({
+        title: "clipText",
+        message: clipText,
+        actions: [
+            {
+                title: "OK",
+                disabled: false, // Optional
+                handler: function() {
+                    router.text.baiduText(clipText);
+                }
             }
         ]
     });
