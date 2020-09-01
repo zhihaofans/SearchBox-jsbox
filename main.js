@@ -16,7 +16,7 @@ if (text) {
                 title: "OK",
                 disabled: false, // Optional
                 handler: function() {
-                    router.text.baiduText(text);
+                    router.text.askToDo(text);
                 }
             }
         ]
