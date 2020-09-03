@@ -30,7 +30,7 @@ if (text) {
                 title: "OK",
                 disabled: false, // Optional
                 handler: function() {
-                    router.text.baiduText(clipText);
+                    router.text.askToDo(clipText);
                 }
             }
         ]

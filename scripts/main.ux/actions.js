@@ -1,5 +1,5 @@
 const app = require("./app");
 
 exports.tapped = sender => {
-  app.sayHello();
-}
+    $("button_hello").title = "Hi";
+};

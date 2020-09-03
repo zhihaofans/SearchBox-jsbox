@@ -6,7 +6,7 @@
     {
       "type" : "button",
       "props" : {
-        "id" : "button[0]",
+        "id" : "button_hello",
         "title" : "Hello",
         "frame" : {
           "y" : 120,
